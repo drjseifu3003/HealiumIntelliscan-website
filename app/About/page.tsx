@@ -1,43 +1,48 @@
 // app/about/page.tsx
+import { Footer } from "@/components/footer";
+import LeadershipTeam from "@/components/leadership-team";
+import { SiteHeader } from "@/components/site-header";
+import StoryTimeline from "@/components/timeline";
+import Image from "next/image";
 import React from "react";
 
 export default function AboutPage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Skitbit International",
-    url: "https://theskitbit.com",
-    logo: "https://theskitbit.com/logo.png",
-    description:
-      "Skitbit International is a 3D product animation agency serving clients in Miami, Los Angeles, New York, Canada, and the UK.",
+    name: "Healium Intelliscan",
+    url: "https://healiumintelliscan.com",
+    logo: "https://healiumintelliscan.com/logo/logo.png",
+    description: "Healium Intelliscan's AI-PoCUS is a pioneering technology in clinical practice, as it non-invasively detects chronic kidney disease in its early stages.",
     sameAs: [
-      "https://www.instagram.com/skitbit",
-      "https://www.linkedin.com/company/skitbit",
+      "https://www.linkedin.com/company/healiumdigitalhealth",
     ],
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Miami",
-      addressRegion: "FL",
-      addressCountry: "US",
-    },
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        telephone: "+1-555-555-5555",
-        contactType: "customer service",
-      },
-    ],
-    areaServed: [
-      { "@type": "Place", name: "Miami" },
-      { "@type": "Place", name: "Los Angeles" },
-      { "@type": "Place", name: "New York" },
-      { "@type": "Place", name: "Canada" },
-      { "@type": "Place", name: "United Kingdom" },
-    ],
+    // address: {
+    //   "@type": "PostalAddress",
+    //   addressLocality: "Miami",
+    //   addressRegion: "FL",
+    //   addressCountry: "US",
+    // },
+    // contactPoint: [
+    //   {
+    //     "@type": "ContactPoint",
+    //     telephone: "+1-555-555-5555",
+    //     contactType: "customer service",
+    //   },
+    // ],
+    // areaServed: [
+    //   { "@type": "Place", name: "Miami" },
+    //   { "@type": "Place", name: "Los Angeles" },
+    //   { "@type": "Place", name: "New York" },
+    //   { "@type": "Place", name: "Canada" },
+    //   { "@type": "Place", name: "United Kingdom" },
+    // ],
   };
 
   return (
     <>
+    <SiteHeader />
+
       {/* SEO Schema for Google + LLMs */}
       <script
         type="application/ld+json"
@@ -47,70 +52,46 @@ export default function AboutPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-20 px-6 md:px-12 lg:px-20 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          About Skitbit International
+      <section className="relative flex flex-col items-center text-white py-10 px-6 md:px-12 lg:px-20 text-center space-y-8">
+        <h1 className="text-2xl md:text-4xl font-bold mb-6">
+          Shaping the Future of Health: Pioneering AI in the Fight Against CKD
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-80">
-          Pioneering the future of 3D product animation for global brands.
+        <p className="text-lg md:text-xl max-w-4xl mx-auto opacity-80">
+          Unveiling the potential of AI to transform kidney care, we're dedicated to advancing CKD detection and management for a healthier tomorrow.
         </p>
-      </section>
-
-      {/* Feature Grid */}
-      <section className="py-16 bg-neutral-900 text-white px-6 md:px-12 lg:px-20">
-        <div className="grid gap-12 md:grid-cols-3">
-          {[
-            {
-              title: "3D Product Animation",
-              desc: "Photo-realistic animations that showcase your products in stunning detail.",
-            },
-            {
-              title: "Global Reach",
-              desc: "Serving Miami, LA, New York, Canada, and the UK with world-class visuals.",
-            },
-            {
-              title: "Cutting-edge Technology",
-              desc: "Using the latest rendering engines and motion design tools.",
-            },
-            {
-              title: "Brand Storytelling",
-              desc: "Helping brands communicate their vision through immersive 3D visuals.",
-            },
-            {
-              title: "Collaborative Workflow",
-              desc: "Work directly with our creative team for maximum efficiency.",
-            },
-            {
-              title: "SEO & Marketing Focus",
-              desc: "Optimized content to enhance your visibility on search engines.",
-            },
-          ].map((feature, index) => (
-            <div
-              key={index}
-              className="bg-neutral-800 p-6 rounded-2xl shadow-lg hover:scale-105 transform transition-all duration-300"
-            >
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-              <p className="opacity-80">{feature.desc}</p>
-            </div>
-          ))}
+        <div className="mt-10 relative rounded-lg shadow-xl">
+          <Image src='/about/about.png' alt="" width={800} height={200} className="rounded-lg"/>
         </div>
+        <StoryTimeline/>
+        <div>
+          <h1 className="text-[#4981F8] text-2xl md:text-4xl font-bold mb-6">OUR VISION</h1>
+          <p className="text-lg md:text-xl max-w-4xl mx-auto opacity-80">At the core of our endeavors lies a commitment to integrating artificial intelligence with medical expertise, propelling the fight against chronic kidney disease into a new era. We strive to craft pioneering AI-ultrasound technologies that transcend conventional boundaries, offering breakthrough precision in CKD detection and management that enhances patient care and outcomes.</p>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+          <div className="w-full max-w-[560px] aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/dSPP_CSJFQo?si=JOAENGjOBo7ME5dK"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+          <div className="w-full max-w-[560px] aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/ZR_puROj5qo?si=IvpCIlWSmheJb1wX"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+        <LeadershipTeam/>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-black text-center text-white px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Ready to Elevate Your Brand?
-        </h2>
-        <p className="text-lg opacity-80 mb-8">
-          Let Skitbit International bring your products to life.
-        </p>
-        <a
-          href="/contact"
-          className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-neutral-200 transition-all"
-        >
-          Get in Touch
-        </a>
-      </section>
+      <Footer/>
     </>
   );
 }

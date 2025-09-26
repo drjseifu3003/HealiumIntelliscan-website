@@ -9,10 +9,8 @@ import { Menu, Briefcase, Tag, HelpCircle, FileText, Info } from "lucide-react"
 export function SiteHeader() {
   const links = [
     { href: "/", label: "Home", icon: Briefcase },
-    // { href: "#pricing", label: "Pricing", icon: Tag },
-    { href: "/", label: "FAQ", icon: HelpCircle },
-    // { href: "#blog", label: "Blog", icon: FileText },
-    { href: "/", label: "About", icon: Info },
+    { href: "/Contact", label: "Contact Us", icon: HelpCircle },
+    { href: "/About", label: "About", icon: Info },
   ]
 
   return (
@@ -22,13 +20,11 @@ export function SiteHeader() {
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-1.5">
             <Image
-              src="/logo/logo.svg"
+              src="/logo/logo.png"
               alt="Healium Intelliscan logo"
-              width={20}
+              width={120}
               height={20}
-              className="h-7 w-7"
             />
-            <span className="font-semibold tracking-wide text-white">Healium Intelliscan</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -52,7 +48,7 @@ export function SiteHeader() {
                          hover:bg-[#4981F8] hover:shadow-md hover:scale-[1.02]
                          transition-all"
             >
-              <Link href="#contact">Request Demo</Link>
+              <Link href="/contact">Request Demo</Link>
             </Button>
           </div>
 
@@ -102,15 +98,13 @@ export function SiteHeader() {
                 </nav>
 
                 {/* CTA Button at Bottom */}
-                <div className="mt-auto border-t border-gray-800 p-4">
                   <Button
                     asChild
-                    className="w-full bg-lime-400 text-black font-medium rounded-lg px-6 py-2.5
-                               hover:bg-lime-300 hover:shadow-md hover:scale-[1.02]
-                               transition-all"
+                    className="mx-4 bg-[#4981F8] text-white font-medium rounded-lg hover:bg-[#4981F8]"
                   >
-                    <Link href="https://wa.link/65mf3i">Get a Quote</Link>
+                    <Link href="/contact">Request Demo</Link>
                   </Button>
+                <div className="mt-auto border-t border-gray-800 p-4">
                 </div>
               </SheetContent>
             </Sheet>
