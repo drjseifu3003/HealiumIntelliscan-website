@@ -48,8 +48,8 @@ export function SiteHeader() {
                          hover:bg-[#4981F8] hover:shadow-md hover:scale-[1.02]
                          transition-all"
             >
-              <Link href="/contact">Request Demo</Link>
-            </Button>
+              <Link href="/Contact">Request Demo</Link>
+            </Button>~
           </div>
 
           {/* Mobile Nav */}
@@ -102,7 +102,7 @@ export function SiteHeader() {
                     asChild
                     className="mx-4 bg-[#4981F8] text-white font-medium rounded-lg hover:bg-[#4981F8]"
                   >
-                    <Link href="/contact">Request Demo</Link>
+                    <Link href="/Contact">Request Demo</Link>
                   </Button>
                   
                 <div className="mt-auto border-t border-gray-800 p-4">
