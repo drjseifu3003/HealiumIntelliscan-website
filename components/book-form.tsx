@@ -15,6 +15,8 @@ import {
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Checkbox } from '@/components/ui/checkbox'
+import { useState } from 'react'
+import { toast } from 'sonner'
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: 'First name is required' }),
@@ -30,6 +32,8 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>
 
 export default function RequestDemoForm() {
+  const [loading, setLoading] = useState(false)
+
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -42,9 +46,35 @@ export default function RequestDemoForm() {
     },
   })
 
-  function onSubmit(values: FormValues) {
-    console.log(values)
-    // Handle form submission here
+  const onSubmit = async (values: FormValues) => {
+    try {
+      setLoading(true)
+      const res = await fetch('/api/demo-booking/request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: values.firstName,
+          lastName: values.lastName,
+          email: values.email, 
+          phone: values.phone,
+          message: values.message, 
+          terms: values.acceptTerms
+        }),
+      })
+
+      if (!res.ok) {
+        throw new Error('Failed to submit request')
+      }
+
+      form.reset() // clear form after success
+      toast.success('Demo booked successfully! We will contact you soon.')
+    } catch (err: any) {
+      toast.error(err.message || 'Something went wrong, please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -159,8 +189,12 @@ export default function RequestDemoForm() {
               )}
             />
 
-            <Button type="submit" className="w-full bg-[#4981F8] text-white">
-              Submit
+            <Button 
+            type="submit" 
+            className="w-full bg-[#4981F8] text-white hover:bg-[#4981F8]"
+            disabled={loading}
+            >
+              {loading ? 'Submitting...' : 'Submit'}
             </Button>
           </form>
         </Form>

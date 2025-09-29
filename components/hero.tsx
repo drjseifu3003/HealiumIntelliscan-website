@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import LazyVideo from "./lazy-video"
+import Link from "next/link"
 
 export function Hero() {
   const buttonNew = (
-    <Button asChild className="rounded-lg bg-[#4981F8] px-6 text-white hover:bg-[#4981F8]">
+    <Button  className="text-2xl bg-[#4981F8] p-4 text-white hover:bg-[#4981F8]">
       <a href="https://wa.link/rc25na" target="_blank" rel="noopener noreferrer">
         Request Demo
       </a>
@@ -14,16 +15,21 @@ export function Hero() {
   return (
     <section className="relative isolate overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center py-8 sm:py-10">
-          <h1 className="mt-3 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            <span className="block">Revolutionizing Early</span>
-            <span className="block text-[#4981F8] drop-shadow-[0_0_20px_rgba(132,204,22,0.35)]">Detection of Chronic Kidney</span>
-            <span className="block">Disease</span>
-          </h1>
-          <div className="mt-6">{buttonNew}</div>
-
+        <div className="flex flex-col items-center justify-center py-8 sm:py-6">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <h1 className=" text-center text-4xl font-extrabold md:text-5xl leading-tight">
+              <span className="block">Revolutionizing Early</span>
+              <span className="block text-[#4981F8] drop-shadow-[0_0_20px_rgba(132,204,22,0.35)]">Detection of Chronic Kidney Disease</span>
+            </h1>
+            <p className="2xl:text-lg text-center opacity-75 max-w-4xl">Healium Intelliscan's AI-PoCUS is a pioneering technology in clinical practice, as it non-invasively detects chronic kidney disease in its early stages and provides predictive insights into its causality.</p>
+            <Link href={'/Contact'} className="mt-4">
+              <Button className="text-md 2xl:text-2xl bg-[#4981F8] rounded px-10 py-4 text-white hover:bg-[#4981F8] cursor-pointer">
+                Request Demo
+              </Button>
+            </Link>
+          </div>
           <div className="mt-10 relative rounded-lg shadow-xl">
-            <Image src='/hero/hero.gif' alt="" width={800} height={200} className="rounded-lg"/>
+            <Image src='/hero/hero.gif' alt="" width={1000} height={200} className="rounded-lg"/>
           </div>
         </div>
       </div>

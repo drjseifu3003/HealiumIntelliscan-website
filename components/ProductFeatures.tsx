@@ -59,7 +59,7 @@ export function ProductFeatures() {
       </div>
       <div className="flex flex-col items-center justify-center my-2 gap-2">
         <p className="text-xl font-bold text-center">Healium Ultrasound Device for CKD Detection and  Management</p>
-        <h2 className="mb-8 text-center text-xl font-normal opacity-50">
+        <h2 className="mb-8 text-center font-normal opacity-50">
           Optimize CKD detection and management with the Healium Ultrasound Device, merging superior AI technology with clinical precision.
         </h2>
       </div>

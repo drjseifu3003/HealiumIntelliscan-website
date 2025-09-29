@@ -1,45 +1,20 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import Image from "next/image"
-import { Star } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 
-interface FeaturesContent {
-  title: string
-}
-
-const defaultContent: FeaturesContent = {
-  title: "Developing Solutions for Global CKD Epidemic",
-}
 
 export function Features() {
-  const [content, setContent] = useState<FeaturesContent>(defaultContent)
-
-  useEffect(() => {
-    // Load content from localStorage
-    const savedContent = localStorage.getItem("skitbit-content")
-    if (savedContent) {
-      try {
-        const parsed = JSON.parse(savedContent)
-        if (parsed.features) {
-          setContent(parsed.features)
-        }
-      } catch (error) {
-        console.error("Error parsing saved content:", error)
-      }
-    }
-  }, [])
 
   return (
-    <section id="features" className="container mx-auto px-4 py-16 sm:py-10 sm:px-20">
-      <h2 className="mb-8 text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-        {content.title}
+    <section id="features" className="container mx-auto px-4 py-16 sm:py-10 sm:px-28">
+      <h2 className="mx-auto mb-8 text-center text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl max-w-4xl">
+        Developing Solutions for <span className="text-[#4981F8] ">Global CKD Epidemic</span>
       </h2>
 
       <div className="grid gap-6 md:grid-cols-3">
         {/* Adaptability Card - Hidden on mobile */}
-        <Card className="liquid-glass border border-white/10 bg-white/5 backdrop-blur-xl">
+        <Card className="liquid-glass border border-white/10 bg-white/5 backdrop-blur-xl p-0">
           <CardContent className="space-y-2">
             <div className="">
               <Image

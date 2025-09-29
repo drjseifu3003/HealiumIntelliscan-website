@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Script from "next/script"
 import Plasma from "@/components/plasma"
+import { Toaster } from "@/components/ui/sonner"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
@@ -83,6 +84,7 @@ export default function RootLayout({
           />
         </div>
         <div className="relative z-10">{children}</div>
+          <Toaster className="z-50 bg-white"/>
       </body>
     </html>
   )

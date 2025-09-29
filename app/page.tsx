@@ -6,6 +6,7 @@ import Script from "next/script"
 import { StateOfArt } from "@/components/stateOfArt"
 import { ProductFeatures } from "@/components/ProductFeatures"
 import { Footer } from "@/components/footer"
+import { CTA } from "@/components/CTA"
 
 // ✅ Force static generation for low TTFB
 export const dynamic = "force-static"
@@ -39,6 +40,7 @@ export default function Page() {
         <StateOfArt/>
         <ProductFeatures/>
         <LogoMarquee />
+        <CTA/>
         <Footer/>
       </main>
 
