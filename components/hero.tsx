@@ -17,7 +17,7 @@ export function Hero() {
               to hospitals, enhancing efficiency and patient care.
             </p>
             <Link href={"/demo-book"} className="mt-6">
-              <Button className="2xl:text-2xl bg-[#4981F8] rounded text-white hover:bg-[#4981F8] cursor-pointer">
+              <Button className="bg-[#4981F8] rounded text-white hover:bg-[#4981F8] cursor-pointer">
                 Request Demo
               </Button>
             </Link>

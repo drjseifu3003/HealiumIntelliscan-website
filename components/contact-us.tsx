@@ -67,7 +67,7 @@ export function ContactUs() {
   return (
     <section
       id="contact"
-      className="p-4 relative container"
+      className="p-4 relative container mx-auto"
     >
       <div className="container max-w-2xl mx-auto">
         <h2 className="text-2xl font-semibold text-center text-white mb-8 pt-4">

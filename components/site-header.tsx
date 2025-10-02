@@ -19,15 +19,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 p-4">
       <div className="container mx-auto max-w-4xl">
         <div className="flex h-14 items-center justify-between px-6 liquid-glass-header rounded-full">
-          {/* Brand Logo */}
-          {/* <Link href="/" className="flex items-center gap-1.5">
-            <Image
-              src="/logo/logo.png"
-              alt="Healium Intelliscan logo"
-              width={120}
-              height={20}
-            />
-          </Link> */}
+          
           <div className="flex items-center space-x-2">
             <Link href='/'>
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
@@ -59,7 +51,7 @@ export function SiteHeader() {
           <div className="hidden md:flex">
             <Button
               asChild
-              className="bg-[#4981F8] text-white font-medium rounded-lg px-6 py-2.5
+              className="bg-[#4981F8] text-white font-medium rounded px-6 py-2.5
                          hover:bg-[#4981F8] hover:shadow-md hover:scale-[1.02]
                          transition-all"
             >
@@ -84,17 +76,6 @@ export function SiteHeader() {
                 side="right"
                 className="liquid-glass border-gray-800 p-0 w-64 flex flex-col"
               >
-                {/* Brand Header */}
-                {/* <div className="flex items-center gap-1.5 px-4 py-4 border-b border-gray-800">
-                  <Image
-                    src="/logo/logo.svg"
-                    alt="Healium logo"
-                    width={24}
-                    height={24}
-                    className="h-6 w-6"
-                  />
-                  <span className="font-semibold tracking-wide text-white text-lg">Healium Intelliscan</span>
-                </div> */}
 
                 {/* Nav Links */}
                 <nav className="flex flex-col gap-1 mt-2 text-gray-200">
@@ -115,7 +96,7 @@ export function SiteHeader() {
                 {/* CTA Button at Bottom */}
                   <Button
                     asChild
-                    className="mx-4 bg-[#4981F8] text-white font-medium rounded-lg hover:bg-[#4981F8]"
+                    className="mx-4 bg-[#4981F8] text-white font-medium rounded hover:bg-[#4981F8]"
                   >
                     <Link href="https://healiumsono.com/login">Login</Link>
                   </Button>

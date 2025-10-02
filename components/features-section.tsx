@@ -49,8 +49,7 @@ export function FeaturesSection() {
           {features.map((f, i) => (
             <Card
               key={i}
-              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(30.333%-1rem)] 
-                         text-center text-white rounded-xl shadow-md p-4"
+              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(30.333%-1rem)] text-center text-white rounded-xl shadow-md space-y-0 flex flex-col gap-2 items-center"
             >
               <img src={f.icon} alt={f.title} className="w-12 h-12 mx-auto" />
               <h3 className="font-semibold text-lg">{f.title}</h3>

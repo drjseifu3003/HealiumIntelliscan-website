@@ -14,19 +14,9 @@ export function Footer() {
 
   return (
     <footer className="bg-black border-t border-[#4981F8] text-gray-300 flex flex-col">
-      <div className="container flex flex-col md:flex-row items-start md:items-center justify-between gap-8 p-6">
+      <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 p-6">
         {/* Left Section */}
         <div className="space-y-4 w-full md:w-auto">
-          {/* Brand Logo */}
-          {/* <Link href="/" className="flex items-center gap-1.5">
-            <Image
-              src="/logo/logo.png"
-              alt="Healium Intelliscan logo"
-              width={160}
-              height={24}
-              className="h-auto w-auto max-w-[160px]"
-            />
-          </Link> */}
           <div className="flex items-center space-x-2">
             <Link href='/'>
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
