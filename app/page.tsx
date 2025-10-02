@@ -7,6 +7,14 @@ import { StateOfArt } from "@/components/stateOfArt"
 import { ProductFeatures } from "@/components/ProductFeatures"
 import { Footer } from "@/components/footer"
 import { CTA } from "@/components/CTA"
+import { FeaturesSection } from "@/components/features-section"
+import { AboutSection } from "@/components/about-section"
+import VideoPlayer from "@/components/VideoPlayer"
+import DeviceCompatibilitySection from "@/components/device-compatability-section"
+import { CertificationsSection } from "@/components/certifications-section"
+import { FAQSection } from "@/components/faq-section"
+import { CTASection } from "@/components/cta-section"
+import { ContactUs } from "@/components/contact-us"
 
 // ✅ Force static generation for low TTFB
 export const dynamic = "force-static"
@@ -36,11 +44,21 @@ export default function Page() {
       <main className="min-h-[100dvh] text-white">
         <SiteHeader />
         <Hero />
-        <Features />
-        <StateOfArt/>
-        <ProductFeatures/>
-        <LogoMarquee />
-        <CTA/>
+        <FeaturesSection/>
+        <AboutSection/>
+        <div id="howitworks" className="container mx-auto px-4 flex flex-col items-center justify-center gap-8 p-4 pt-8 lg:pt-10">
+          <h2 className="text-2xl font-semibold text-center text-white">How it works</h2>
+          <VideoPlayer
+            desktopSrc="/videos/howitworks.mp4"
+            mobileSrc="/videos/howitworks_mobile.mp4"
+            className="bg-black container border max-w-4xl rounded-md"
+          />
+        </div>
+        <DeviceCompatibilitySection/>
+        <CertificationsSection/>
+        <FAQSection/>
+        <CTASection/>
+        <ContactUs/>
         <Footer/>
       </main>
 

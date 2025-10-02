@@ -22,6 +22,7 @@ const formSchema = z.object({
   firstName: z.string().min(1, { message: 'First name is required' }),
   lastName: z.string().min(1, { message: 'Last name is required' }),
   email: z.string().email({ message: 'Please enter a valid email address' }),
+  company: z.string().min(1, "Company name is required"),
   phone: z.string().min(1, { message: 'Phone number is required' }),
   message: z.string().min(1, { message: 'Message is required' }),
   acceptTerms: z.boolean().refine((val) => val === true, {
@@ -39,6 +40,7 @@ export default function RequestDemoForm() {
     defaultValues: {
       firstName: '',
       lastName: '',
+      company: "",
       email: '',
       phone: '',
       message: '',
@@ -57,6 +59,7 @@ export default function RequestDemoForm() {
         body: JSON.stringify({
           firstName: values.firstName,
           lastName: values.lastName,
+          company: values.company,
           email: values.email, 
           phone: values.phone,
           message: values.message, 
@@ -119,35 +122,48 @@ export default function RequestDemoForm() {
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter your email" type="email" {...field} className="focus-visible:ring-[#4981F8] focus-visible:border-[#4981F8] transition-colors"/>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              control={form.control}
+              name="company"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Company</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Your company name" {...field} className="focus-visible:ring-[#4981F8] focus-visible:border-[#4981F8] transition-colors"/>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            
 
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Phone number</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Enter your phone number" {...field} className="focus-visible:ring-[#4981F8] focus-visible:border-[#4981F8] transition-colors"/>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Enter your email" type="email" {...field} className="focus-visible:ring-[#4981F8] focus-visible:border-[#4981F8] transition-colors"/>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Phone number</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Enter your phone number" {...field} className="focus-visible:ring-[#4981F8] focus-visible:border-[#4981F8] transition-colors"/>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
             <FormField
               control={form.control}
@@ -192,7 +208,7 @@ export default function RequestDemoForm() {
             <Button 
             type="submit" 
             className="w-full bg-[#4981F8] text-white hover:bg-[#4981F8]"
-            disabled={loading}
+            disabled={loading || !form.formState.isValid}
             >
               {loading ? 'Submitting...' : 'Submit'}
             </Button>

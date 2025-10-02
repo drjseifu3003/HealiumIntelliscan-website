@@ -9,8 +9,10 @@ import { Menu, Briefcase, Tag, HelpCircle, FileText, Info } from "lucide-react"
 export function SiteHeader() {
   const links = [
     { href: "/", label: "Home", icon: Briefcase },
-    { href: "/Contact", label: "Contact Us", icon: HelpCircle },
-    { href: "/About", label: "About", icon: Info },
+    { href: "#features", label: "Features", icon: Info },
+    { href: "#howitworks", label: "How it works", icon: Info },
+    { href: "#faqs", label: "FAQs", icon: Info },
+    { href: "#contact", label: "Contact Us", icon: HelpCircle },
   ]
 
   return (
@@ -18,14 +20,27 @@ export function SiteHeader() {
       <div className="container mx-auto max-w-4xl">
         <div className="flex h-14 items-center justify-between px-6 liquid-glass-header rounded-full">
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center gap-1.5">
+          {/* <Link href="/" className="flex items-center gap-1.5">
             <Image
               src="/logo/logo.png"
               alt="Healium Intelliscan logo"
               width={120}
               height={20}
             />
-          </Link>
+          </Link> */}
+          <div className="flex items-center space-x-2">
+            <Link href='/'>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                <img src="/logo/logo.svg" className="w-8 h-8" />
+              </div>
+            </Link>
+            <div className="flex flex-col items-start">
+              <Link href='/'><span className="font-semibold text-lg text-[#687FE5]">Healium Sono</span></Link>
+              <Link href='https://www.healiumintelliscan.com' target="_blank" className="text-[#687FE5]">
+                <span className="text-sm">by Healium Intelliscan</span>
+              </Link>
+            </div>
+          </div>
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-6 text-sm text-gray-300 md:flex">
@@ -48,7 +63,7 @@ export function SiteHeader() {
                          hover:bg-[#4981F8] hover:shadow-md hover:scale-[1.02]
                          transition-all"
             >
-              <Link href="/Contact">Request Demo</Link>
+              <Link href="https://healiumsono.com/login">Login</Link>
             </Button>
           </div>
 
@@ -70,7 +85,7 @@ export function SiteHeader() {
                 className="liquid-glass border-gray-800 p-0 w-64 flex flex-col"
               >
                 {/* Brand Header */}
-                <div className="flex items-center gap-1.5 px-4 py-4 border-b border-gray-800">
+                {/* <div className="flex items-center gap-1.5 px-4 py-4 border-b border-gray-800">
                   <Image
                     src="/logo/logo.svg"
                     alt="Healium logo"
@@ -79,7 +94,7 @@ export function SiteHeader() {
                     className="h-6 w-6"
                   />
                   <span className="font-semibold tracking-wide text-white text-lg">Healium Intelliscan</span>
-                </div>
+                </div> */}
 
                 {/* Nav Links */}
                 <nav className="flex flex-col gap-1 mt-2 text-gray-200">
@@ -102,7 +117,7 @@ export function SiteHeader() {
                     asChild
                     className="mx-4 bg-[#4981F8] text-white font-medium rounded-lg hover:bg-[#4981F8]"
                   >
-                    <Link href="/Contact">Request Demo</Link>
+                    <Link href="https://healiumsono.com/login">Login</Link>
                   </Button>
                   
                 <div className="mt-auto border-t border-gray-800 p-4">

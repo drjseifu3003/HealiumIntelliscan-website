@@ -5,9 +5,11 @@ import { Separator } from "./ui/separator"
 
 export function Footer() {
   const links = [
-    { href: "/", label: "Home", icon: Briefcase },
-    { href: "/Contact", label: "Contact Us", icon: HelpCircle },
-    { href: "/About", label: "About", icon: Info },
+    // { href: "/", label: "Home", icon: Briefcase },
+    // { href: "#features", label: "Features", icon: Info },
+    { href: "#howitworks", label: "How it works", icon: Info },
+    { href: "#faqs", label: "FAQs", icon: Info },
+    { href: "#contact", label: "Contact Us", icon: HelpCircle },
   ]
 
   return (
@@ -16,7 +18,7 @@ export function Footer() {
         {/* Left Section */}
         <div className="space-y-4 w-full md:w-auto">
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center gap-1.5">
+          {/* <Link href="/" className="flex items-center gap-1.5">
             <Image
               src="/logo/logo.png"
               alt="Healium Intelliscan logo"
@@ -24,7 +26,20 @@ export function Footer() {
               height={24}
               className="h-auto w-auto max-w-[160px]"
             />
-          </Link>
+          </Link> */}
+          <div className="flex items-center space-x-2">
+            <Link href='/'>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                <img src="/logo/logo.svg" className="w-8 h-8" />
+              </div>
+            </Link>
+            <div className="flex flex-col items-start">
+              <Link href='/'><span className="font-semibold text-lg text-[#687FE5]">Healium Sono</span></Link>
+              <Link href='https://www.healiumintelliscan.com' target="_blank" className="text-[#687FE5]">
+                <span className="text-sm">by Healium Intelliscan</span>
+              </Link>
+            </div>
+          </div>
 
           {/* Address */}
           <div className="flex items-center space-x-2 text-sm">
