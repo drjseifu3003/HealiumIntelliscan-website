@@ -9,9 +9,8 @@ import { Toaster } from "@/components/ui/sonner"
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Healium Intelliscan stands at the forefront of innovation with our cutting-edge AI-enhanced Point-of-Care Ultrasound (PoCUS) technology.",
-  description:
-    "Healium Intelliscan's AI-PoCUS is a pioneering technology in clinical practice, as it non-invasively detects chronic kidney disease in its early stages.",
+  title: "Healium Intelliscan - Ultrasound Imaging Platform",
+  description: "Healium Sono is a comprehensive ultrasound imaging platform designed for radiologists and hospitals. It provides a streamlined workflow for ultrasound case management, interpretation, and reporting with AI-enhanced analysis capabilities.",
 }
 
 export default function RootLayout({

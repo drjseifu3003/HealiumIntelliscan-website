@@ -20,14 +20,14 @@ export default function Page() {
   const pageStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://healiumintelliscan.com/",
-    name: "Healium Intelliscan stands at the forefront of innovation with our cutting-edge AI-enhanced Point-of-Care Ultrasound (PoCUS) technology.",
-    description: "Healium Intelliscan's AI-PoCUS is a pioneering technology in clinical practice, as it non-invasively detects chronic kidney disease in its early stages.",
-    url: "https://healiumintelliscan.com/",
+    "@id": "https://healiumsono.com/",
+    name: "Healium Intelliscan - Ultrasound Imaging Platform",
+    description: "Healium Sono is a comprehensive ultrasound imaging platform designed for radiologists and hospitals. It provides a streamlined workflow for ultrasound case management, interpretation, and reporting with AI-enhanced analysis capabilities.",
+    url: "https://healiumsono.com/",
     mainEntity: {
       "@type": "Organization",
-      name: "Healium Intelliscan",
-      url: "https://healiumintelliscan.com",
+      name: "Healium Sono",
+      url: "https://healiumsono.com",
       sameAs: [
         "https://www.linkedin.com/company/healiumdigitalhealth"
       ],
