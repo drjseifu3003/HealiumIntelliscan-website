@@ -55,7 +55,7 @@ export function SiteHeader() {
                          hover:bg-[#4981F8] hover:shadow-md hover:scale-[1.02]
                          transition-all"
             >
-              <Link href="https://healiumsono.com/login">Login</Link>
+              <Link href="https://app.healiumsono.com">Login</Link>
             </Button>
           </div>
 
@@ -98,7 +98,7 @@ export function SiteHeader() {
                     asChild
                     className="mx-4 bg-[#4981F8] text-white font-medium rounded hover:bg-[#4981F8]"
                   >
-                    <Link href="https://healiumsono.com/login">Login</Link>
+                    <Link href="https://app.healiumsono.com">Login</Link>
                   </Button>
                   
                 <div className="mt-auto border-t border-gray-800 p-4">
