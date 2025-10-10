@@ -27,7 +27,7 @@ export function Hero() {
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
             <div className="relative rounded-lg shadow-xl">
               <Image
-                src="/about/bed-scanner.png"
+                src="/about/image-1.jpeg"
                 alt="Bed Scanner"
                 width={500}
                 height={400}
@@ -36,7 +36,7 @@ export function Hero() {
             </div>
             <div className="relative rounded-lg shadow-xl">
               <Image
-                src="/about/doctor.png"
+                src="/about/image-2.jpeg"
                 alt="Doctor"
                 width={500}
                 height={400}

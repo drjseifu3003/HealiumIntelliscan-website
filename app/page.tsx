@@ -46,7 +46,7 @@ export default function Page() {
           <VideoPlayer
             desktopSrc="/videos/howitworks.mp4"
             mobileSrc="/videos/howitworks_mobile.mp4"
-            className="bg-black container border max-w-4xl rounded-md"
+            className="bg-black container max-w-4xl rounded-md"
           />
         </div>
         <DeviceCompatibilitySection/>

@@ -1,12 +1,10 @@
-import { Briefcase, HelpCircle, Info, MapPin } from "lucide-react"
+import { HelpCircle, Info, MapPin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Separator } from "./ui/separator"
 
 export function Footer() {
   const links = [
-    // { href: "/", label: "Home", icon: Briefcase },
-    // { href: "#features", label: "Features", icon: Info },
     { href: "#howitworks", label: "How it works", icon: Info },
     { href: "#faqs", label: "FAQs", icon: Info },
     { href: "#contact", label: "Contact Us", icon: HelpCircle },
