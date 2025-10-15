@@ -29,7 +29,7 @@ export async function POST(req: Request) {
           ...(phone && {phone_number: phone}),
           ...(message && {message}),
           terms_accepted: terms,
-          source: "Healium Intelliscan Website"
+          source: "Healium Sono Website"
         },
       ])
       .select()
