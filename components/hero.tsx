@@ -4,17 +4,17 @@ import Link from "next/link"
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hiddenc:\Users\derej\projects\radiology-cloud-dashboard\components\landing\about-section.tsx">
+    <section className="relative overflow-hidden">
       <div className="container mx-auto px-4">
+        {/* Text + CTA */}
         <div className="flex flex-col items-center justify-center py-8 sm:py-6">
-          {/* Text + Button */}
           <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className=" text-center text-4xl font-extrabold md:text-5xl leading-tight">
-              <span className="block">Remote Ultrasound Diagnostics</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              Remote Ultrasound for <br /> <span className="text-blue-600">Cardiology</span> & <span className="text-pink-500">OB/GYN</span>
             </h1>
             <p className="2xl:text-lg text-center opacity-75 max-w-4xl">
-              Healium Intelliscan provides remote ultrasound diagnostic services
-              to hospitals, enhancing efficiency and patient care.
+              Healium Intelliscan enables hospitals to perform high-quality remote diagnostics, 
+              improving patient care and operational efficiency.
             </p>
             <Link href={"/demo-book"} className="mt-6">
               <Button className="bg-[#4981F8] rounded text-white hover:bg-[#4981F8] cursor-pointer">
@@ -22,6 +22,7 @@ export function Hero() {
               </Button>
             </Link>
           </div>
+        
 
           {/* Two Side-by-Side Images */}
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">

@@ -37,10 +37,11 @@ export function FeaturesSection() {
         {/* Intro text */}
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg leading-relaxed tracking-wide">
-            Healium Intelliscan is a leading provider of remote ultrasound diagnostic services,
-            enabling hospitals to improve efficiency, reduce costs, and enhance patient care.
-            Our innovative technology connects sonographers with patients remotely, ensuring
-            timely and accurate diagnoses.
+            Healium Sono delivers advanced remote ultrasound diagnostics across key specialties
+            including Cardiology and OB/GYN. Our platform helps hospitals improve efficiency, reduce
+            operational costs, and elevate patient outcomes. By connecting certified sonographers and
+            radiologists to patients in real time, we ensure every scan receives an expert, accurate,
+            and timely interpretation.
           </p>
         </div>
 

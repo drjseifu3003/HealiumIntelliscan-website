@@ -5,10 +5,11 @@ export function AboutSection() {
         <div className="lg:w-3/4">
           <h2 className="text-2xl font-semibold text-white text-center mb-6 lg:text-left">About Healium Sono</h2>
           <p className=" leading-relaxed">
-            Healium Intelliscan is a pioneering company in the field of remote ultrasound diagnostics. Our mission is
-            to revolutionize healthcare by providing cutting-edge technology that connects sonographers with patients
-            in remote locations. We are committed to improving healthcare accessibility and reducing costs while
-            maintaining the highest standards of diagnostic accuracy.
+            Healium Sono is redefining how ultrasound diagnostics are delivered. Through our
+            advanced remote imaging platform, we empower hospitals and clinics to access expert
+            Cardiology and OB/GYN interpretations in real time. Our mission is to expand access to
+            high-quality diagnostics, improve patient outcomes, and reduce operational costs
+            without compromising clinical precision or care standards.
           </p>
         </div>
         <div className="relative lg:w-1/4">
