@@ -10,6 +10,9 @@ import { CertificationsSection } from "@/components/certifications-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
 import { ContactUs } from "@/components/contact-us"
+import Image from "next/image"
+import { ResponsiveImage } from "@/components/Image/ResponsiveImage"
+import { ImageCarousel } from "@/components/Image/ImageCarousel"
 
 // ✅ Force static generation for low TTFB
 export const dynamic = "force-static"
@@ -34,6 +37,49 @@ export default function Page() {
     }
   }
 
+  const sampleImages = [
+    {
+      src: "/images/Parasternal-short-axis-view-300x200.jpg",
+      alt: "Parasternal short axis view",
+      label: "Parasternal short axis view",
+    },
+    {
+      src: "/images/Carotid-2-300x214.jpg",
+      alt: "Carotid 2",
+      label: "Carotid 2",
+    },
+    {
+      src: "/images/Uncompromising-Image-Quality_Liver-300x169.gif",
+      alt: "Uncompromising Image Quality_Liver",
+      label: "Uncompromising Image Quality_Liver",
+    },
+    {
+      src: "/images/Elbow.gif",
+      alt: "Elbow",
+      label: "Elbow",
+    },
+    {
+      src: "/images/Kidney.gif",
+      alt: "Kidney",
+      label: "Kidney",
+    },
+    {
+      src: "/images/Median-nerve.gif",
+      alt: "Median nerve",
+      label: "Median nerve",
+    },
+    {
+      src: "/images/Thyroid-hypertrophic-follicle.gif",
+      alt: "Thyroid hypertrophic follicle",
+      label: "Thyroid hypertrophic follicle",
+    },
+    {
+      src: "/images/Parasternal-long-axis-view.gif",
+      alt: "Parasternal long axis view",
+      label: "Parasternal long axis view",
+    },
+  ]
+
   return (
     <>
       <main className="min-h-[100dvh] text-white">
@@ -49,8 +95,20 @@ export default function Page() {
             className="bg-black container max-w-4xl rounded-md"
           />
         </div>
+        <div className="container mx-auto md:h-[500px] h-[400px] my-4 lg:my-8">
+          <ResponsiveImage
+          desktop="/images/high_quality_image.png"
+          mobile="/images/high_quality_image_mobile.png"
+          alt=""
+          />
+        </div>
+        <div className="max-w-4xl mx-auto my-4 lg:my-8">
+          <h1 className="mb-12 text-2xl text-center font-bold text-white">Supreme Image Quality</h1>
+          <ImageCarousel images={sampleImages} />
+        </div>
         <DeviceCompatibilitySection/>
         <CertificationsSection/>
+        
         <FAQSection/>
         <CTASection/>
         <ContactUs/>

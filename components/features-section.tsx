@@ -40,7 +40,7 @@ export function FeaturesSection() {
             Healium Sono delivers advanced remote ultrasound diagnostics across key specialties
             including Cardiology and OB/GYN. Our platform helps hospitals improve efficiency, reduce
             operational costs, and elevate patient outcomes. By connecting certified sonographers and
-            radiologists to patients in real time, we ensure every scan receives an expert, accurate,
+            radiologists to patients in real time. We ensure every scan receives an expert, accurate,
             and timely interpretation.
           </p>
         </div>
