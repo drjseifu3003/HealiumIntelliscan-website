@@ -67,10 +67,10 @@ export function ContactUs() {
   return (
     <section
       id="contact"
-      className="p-4 relative container mx-auto"
+      className="px-4 relative container mx-auto"
     >
       <div className="container max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold text-center text-white mb-8 pt-4">
+        <h2 className="text-2xl font-semibold text-center text-white mb-8">
           Contact Us
         </h2>
 
@@ -137,7 +137,7 @@ export function ContactUs() {
             />
 
             {/* Button */}
-            <div className="flex items-center justify-center py-4">
+            <div className="flex items-center justify-center mb-8">
               <Button
                 type="submit"
                 disabled={loading}

@@ -7,29 +7,31 @@ export function Hero() {
     <section className="relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Text + CTA */}
-        <div className="flex flex-col items-center justify-center py-8 sm:py-6">
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        <div className="flex flex-col items-center justify-center pt-4">
+          <div className="flex flex-col items-center justify-center gap-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-center md:text-left">
               Remote Ultrasound for <br /> <span className="text-blue-600">Cardiology</span> & <span className="text-pink-500">OB/GYN</span>
             </h1>
             <p className="2xl:text-lg text-center opacity-75 max-w-4xl">
               Healium Intelliscan enables hospitals to perform high-quality remote diagnostics, 
               improving patient care and operational efficiency.
             </p>
-            <Link href={"/demo-book"} className="mt-6">
-              <Button className="bg-[#4981F8] rounded text-white hover:bg-[#4981F8] cursor-pointer">
-                Request Demo
-              </Button>
-            </Link>
+            <Button
+              asChild
+              className="bg-[#4981F8] text-white font-medium rounded px-6 py-2.5
+                         hover:bg-[#4981F8] hover:shadow-md hover:scale-[1.02]
+                         transition-all w-64 mt-4"
+            >
+              <Link href="/demo-book">Request Demo</Link>
+            </Button>
           </div>
-        
 
           {/* Two Side-by-Side Images */}
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
             <div className="relative rounded-lg shadow-xl">
               <Image
-                src="/about/image-1.jpeg"
-                alt="Bed Scanner"
+                src="/hero/cardiac.png"
+                alt="Cardiac"
                 width={500}
                 height={400}
                 className="rounded-lg object-cover"
@@ -37,8 +39,8 @@ export function Hero() {
             </div>
             <div className="relative rounded-lg shadow-xl">
               <Image
-                src="/about/image-2.jpeg"
-                alt="Doctor"
+                src="/hero/OBGYN.png"
+                alt="OBGYN"
                 width={500}
                 height={400}
                 className="rounded-lg object-cover"

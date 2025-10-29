@@ -3,10 +3,10 @@ import { Card, CardContent } from "@/components/ui/card"
 const DeviceCompatibilitySection = () => {
   return (
     <section 
-    className="p-4 container mx-auto"
+    className="px-4 container mx-auto"
     >
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-2xl font-semibold text-center text-white mb-8 pt-4">Device compatibility</h2>
+        <h2 className="text-2xl font-semibold text-center text-white mb-8">Device compatibility</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="p-8 text-center">

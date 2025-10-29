@@ -16,7 +16,7 @@ export function SiteHeader() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 p-4">
+    <header className="sticky top-0 z-50 py-4">
       <div className="container mx-auto max-w-4xl">
         <div className="flex h-14 items-center justify-between px-6 liquid-glass-header rounded-full">
           

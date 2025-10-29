@@ -7,8 +7,8 @@ import {
 
 export function FAQSection() {
   return (
-    <section id="faqs" className="p-4 container mx-auto max-w-3xl space-y-8">
-      <h2 className="text-2xl font-semibold text-center text-white pt-4">
+    <section id="faqs" className="px-4 container mx-auto max-w-3xl space-y-8">
+      <h2 className="text-2xl font-semibold text-center text-white">
         Frequently Asked Questions
       </h2>
 

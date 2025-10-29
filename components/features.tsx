@@ -7,7 +7,7 @@ export function Features() {
   return (
     <section
       id="features"
-      className="container mx-auto px-4 py-16 sm:py-10 sm:px-28"
+      className="container mx-auto px-4"
     >
       <h2 className="mx-auto mb-8 max-w-4xl text-center text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl">
         Developing Solutions for{" "}

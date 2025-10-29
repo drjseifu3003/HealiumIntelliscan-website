@@ -87,7 +87,7 @@ export default function Page() {
         <Hero />
         <FeaturesSection/>
         <AboutSection/>
-        <div id="howitworks" className="container mx-auto px-4 flex flex-col items-center justify-center gap-8 p-4 pt-8 lg:pt-10">
+        <div id="howitworks" className="container mx-auto mt-12 px-4 flex flex-col items-center justify-center">
           <h2 className="text-2xl font-semibold text-center text-white">How it works</h2>
           <VideoPlayer
             desktopSrc="/videos/howitworks.mp4"
@@ -95,20 +95,19 @@ export default function Page() {
             className="bg-black container max-w-4xl rounded-md"
           />
         </div>
-        <div className="container mx-auto md:h-[500px] h-[400px] my-4 lg:my-8">
+        <div className="container mx-auto md:h-[500px] h-[400px] mb-12">
           <ResponsiveImage
           desktop="/images/high_quality_image.png"
           mobile="/images/high_quality_image_mobile.png"
           alt=""
           />
         </div>
-        <div className="max-w-4xl mx-auto my-4 lg:my-8">
-          <h1 className="mb-12 text-2xl text-center font-bold text-white">Supreme Image Quality</h1>
+        {/* <div className="max-w-4xl mx-auto my-12">
+          <h1 className="mb-8 text-2xl text-center font-bold text-white">Supreme Image Quality</h1>
           <ImageCarousel images={sampleImages} />
-        </div>
+        </div> */}
         <DeviceCompatibilitySection/>
         <CertificationsSection/>
-        
         <FAQSection/>
         <CTASection/>
         <ContactUs/>

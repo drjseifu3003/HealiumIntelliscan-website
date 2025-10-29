@@ -1,6 +1,6 @@
 export function AboutSection() {
   return (
-    <section id="about" className="p-4 flex items-center justify-center pt-8">
+    <section id="about" className="px-4 flex items-center justify-center">
       <div className="container max-w-4xl flex flex-col gap-4 lg:flex-row items-center mx-auto">
         <div className="lg:w-3/4">
           <h2 className="text-2xl font-semibold text-white text-center mb-6 lg:text-left">About Healium Sono</h2>
