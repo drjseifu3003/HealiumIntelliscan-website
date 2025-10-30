@@ -4,10 +4,10 @@ import { Card } from "./ui/card";
 export function CertificationsSection() {
   return (
     <section
-    className="px-4 my-12 relative container mx-auto"
+    className="px-4 py-12 relative container mx-auto"
     >
-      <div className="container mx-auto">
-        <h2 className="text-2xl font-semibold text-center text-white mb-8">Trust factors</h2>
+      <div className="container mx-auto space-y-10">
+        <h2 className="text-3xl font-semibold text-center text-white">Trust factors</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <Card className="text-center border py-4 shadow-0 border-[#687FE5]">

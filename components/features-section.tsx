@@ -31,9 +31,9 @@ export function FeaturesSection() {
 
   return (
     <section id="features" 
-    className="my-12 px-4"
+    className="px-4 liquid-glass py-12"
     >
-      <div className="container mx-auto space-y-6">
+      <div className="max-w-7xl mx-auto space-y-10">
         {/* Intro text */}
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg leading-relaxed tracking-wide">
@@ -46,7 +46,7 @@ export function FeaturesSection() {
         </div>
 
         {/* Features */}
-        <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
           {features.map((f, i) => (
             <Card
               key={i}

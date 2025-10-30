@@ -67,10 +67,10 @@ export function ContactUs() {
   return (
     <section
       id="contact"
-      className="px-4 relative container mx-auto"
+      className="px-4 py-12 relative liquid-glass"
     >
-      <div className="container max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold text-center text-white mb-8">
+      <div className="container max-w-2xl mx-auto space-y-8">
+        <h2 className="text-3xl font-semibold text-center text-white">
           Contact Us
         </h2>
 
@@ -141,7 +141,7 @@ export function ContactUs() {
               <Button
                 type="submit"
                 disabled={loading}
-                className="bg-blue-500 hover:bg-blue-600 text-white"
+                className="bg-blue-500 hover:bg-blue-600 text-white w-64 rounded cursor-pointer"
               >
                 {loading ? "Sending..." : "Send message"}
               </Button>

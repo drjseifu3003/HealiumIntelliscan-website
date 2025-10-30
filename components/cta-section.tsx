@@ -13,7 +13,7 @@ export function CTASection() {
   return (
 
     <section className="px-4 my-12 container mx-auto">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-5xl">
         <Card className="p-8">
           <CardContent className="p-0">
             <div className="flex flex-col md:flex-row gap-8 items-center justify-between">

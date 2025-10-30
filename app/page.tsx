@@ -82,20 +82,21 @@ export default function Page() {
 
   return (
     <>
-      <main className="min-h-[100dvh] text-white">
+      <main className="text-white">
         <SiteHeader />
         <Hero />
         <FeaturesSection/>
-        <AboutSection/>
-        <div id="howitworks" className="container mx-auto mt-12 px-4 flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-semibold text-center text-white">How it works</h2>
+        <div id="howitworks" className="bg-[#000000] py-12 mx-auto px-4 flex flex-col items-center justify-center">
+          <h2 className="text-3xl font-semibold text-center text-white">How it works</h2>
           <VideoPlayer
             desktopSrc="/videos/howitworks.mp4"
             mobileSrc="/videos/howitworks_mobile.mp4"
-            className="bg-black container max-w-4xl rounded-md"
+            className="bg-black container rounded-md"
           />
         </div>
-        <div className="container mx-auto md:h-[500px] h-[400px] mb-12">
+        <AboutSection/>
+        
+        <div className="mx-auto md:h-[500px] h-[400px] my-12">
           <ResponsiveImage
           desktop="/images/high_quality_image.png"
           mobile="/images/high_quality_image_mobile.png"
