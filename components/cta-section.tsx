@@ -12,7 +12,7 @@ export function CTASection() {
   
   return (
 
-    <section className="px-4 my-12 container mx-auto">
+    <section className="px-4 py-12 container mx-auto liquid-glass">
       <div className="container mx-auto max-w-5xl">
         <Card className="p-8">
           <CardContent className="p-0">

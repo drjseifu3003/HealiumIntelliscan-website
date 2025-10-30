@@ -67,7 +67,7 @@ export function ContactUs() {
   return (
     <section
       id="contact"
-      className="px-4 py-12 relative liquid-glass"
+      className="px-4 py-12 relative"
     >
       <div className="container max-w-2xl mx-auto space-y-8">
         <h2 className="text-3xl font-semibold text-center text-white">

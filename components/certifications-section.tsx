@@ -4,7 +4,7 @@ import { Card } from "./ui/card";
 export function CertificationsSection() {
   return (
     <section
-    className="px-4 py-12 relative container mx-auto"
+    className="px-4 pb-12 relative container mx-auto liquid-glass"
     >
       <div className="container mx-auto space-y-10">
         <h2 className="text-3xl font-semibold text-center text-white">Trust factors</h2>
