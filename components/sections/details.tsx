@@ -146,7 +146,7 @@ export default function Details() {
         </div>
 
       <section
-        className="text-white py-24 md:py-32 text-center"
+        className="text-white w-full py-24 md:py-32 text-center"
         style={{
           backgroundImage: `
             linear-gradient(

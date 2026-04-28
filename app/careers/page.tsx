@@ -56,42 +56,42 @@ export default function CareersPage() {
         <div className="border border-gray-600 p-6 rounded-lg text-left">
             <h3 className="font-semibold">Meaningful Impact</h3>
             <p className="text-sm text-gray-400 mt-2">
-            Work on technology that directly impacts patient outcomes and enables early detection of chronic kidney disease.
+            Work on technology that directly impacts patient outcomes. Help detect chronic kidney disease before it becomes life-threatening.
             </p>
         </div>
 
         <div className="border border-gray-600 p-6 rounded-lg text-left">
             <h3 className="font-semibold">Cutting-Edge Technology</h3>
             <p className="text-sm text-gray-400 mt-2">
-            Work with AI, machine learning, and advanced ultrasound technologies to build next-generation healthcare solutions.
+            Work with AI, machine learning, and computer vision to develop next-generation point-of-care ultrasound diagnostics.
             </p>
         </div>
 
         <div className="border border-gray-600 p-6 rounded-lg text-left">
             <h3 className="font-semibold">Growth Opportunities</h3>
             <p className="text-sm text-gray-400 mt-2">
-            Join a fast-growing startup where your contributions directly shape the company and your career trajectory.
+            Join an early-stage startup where your contributions matter. Grow with us as we scale our technology globally.
             </p>
         </div>
 
         <div className="border border-gray-600 p-6 rounded-lg text-left">
             <h3 className="font-semibold">Collaborative Culture</h3>
             <p className="text-sm text-gray-400 mt-2">
-            Work alongside experts in healthcare, AI, and engineering in a highly collaborative environment.
+            Work alongside experts in healthcare, AI, and medical devices. We value diverse perspectives and open communication.
             </p>
         </div>
 
         <div className="border border-gray-600 p-6 rounded-lg text-left">
             <h3 className="font-semibold">Innovation First</h3>
             <p className="text-sm text-gray-400 mt-2">
-            Be encouraged to experiment, innovate, and bring new ideas to life in a fast-paced environment.
+            We encourage experimentation and creative problem-solving. Your ideas can shape the future of diagnostic healthcare.
             </p>
         </div>
 
         <div className="border border-gray-600 p-6 rounded-lg text-left">
             <h3 className="font-semibold">Healthcare Benefits</h3>
             <p className="text-sm text-gray-400 mt-2">
-            Comprehensive benefits package supporting your health, well-being, and professional growth.
+            Comprehensive health coverage, flexible work arrangements, and competitive compensation packages.
             </p>
         </div>
 

@@ -24,6 +24,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Healium Intelliscan",
   description: "AI-powered healthcare solutions",
+   icons: {
+    icon: "/favicon.jpg",
+  },
 };
 
 export default function RootLayout({

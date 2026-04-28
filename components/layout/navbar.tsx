@@ -5,10 +5,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
-
+  const pathname = usePathname()
+  
   return (
     <>
       {/* NAVBAR */}
