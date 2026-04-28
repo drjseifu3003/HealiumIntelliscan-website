@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-gray-800 text-gray-400">
+    <footer className="bg-black border-t border-sky-500 text-gray-400">
 
       <div className="max-w-7xl mx-auto px-6 py-12">
 
@@ -53,23 +53,25 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="border-t border-gray-800 mt-10 pt-6 flex justify-between items-center">
 
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-100">
             © 2026 Healium Intelliscan
           </p>
 
-          {/* GREY LINKEDIN */}
+          {/* LINKEDIN */}
+          <a  href="https://www.linkedin.com/company/healiumdigitalhealth/" target = "blank" className="inline-block">
           <Image
             src="/linkedin.png"
-            width={28}
-            height={28}
+            width={30}
+            height={30}
             alt="linkedin"
-            className="opacity-60 hover:opacity-100"
+            className="opacity-60 hover:opacity-100 cursor-pointer"
           />
+          </a>
 
         </div>
 
         {/* FDA TEXT */}
-        <p className="text-xs text-gray-500 mt-4">
+        <p className="text-xs text-gray-100 mt-4">
           This device is pending FDA 510(k) clearance and is not yet available for sale in the United States.
         </p>
 

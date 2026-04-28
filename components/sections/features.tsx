@@ -16,7 +16,7 @@ export default function Features() {
           <h3 className="font-semibold text-lg text-white text-center">
             Innovative AI-Driven Ultrasound
           </h3>
-          <p className="mt-2 text-gray-400 text-sm text-center">
+          <p className="mt-2 text-gray-400 text-sm text-center mx-auto ml-3 mr-3">
             AI-powered Ultrasound offers real-time support and quality evaluation, enabling healthcare professionals of all skill levels to perform high-quality renal ultrasounds.
           </p>
         </div>
@@ -26,7 +26,7 @@ export default function Features() {
           <h3 className="font-semibold text-lg text-white text-center">
             Revolutionizing Early CKD Detection
           </h3>
-          <p className="mt-2 text-gray-400 text-sm text-center">
+          <p className="mt-2 text-gray-400 text-sm text-center mx-auto ml-3 mr-3">
             Detects Chronic Kidney Disease from its earliest stage but also identifies the root cause. By leveraging digital biomarkers.
 
 
@@ -38,7 +38,7 @@ export default function Features() {
           <h3 className="font-semibold text-lg text-white text-center">
             Advanced Renal Health Diagnostics
           </h3>
-          <p className="mt-2 text-gray-400 text-sm text-center">
+          <p className="mt-2 text-gray-400 text-sm text-center mx-auto ml-3 mr-3">
             Generates patient-specific perfusion models and constructs three-dimensional representations of the kidney, enhancing precision and clarity in diagnosis.
           </p>
         </div>

@@ -9,7 +9,7 @@ export default function Details() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 text-center space-y-10">
 
         
-        <h2 className="text-2xl md:text-4xl font-semibold max-w-3xl mx-auto leading-snug mb-6">
+        <h2 className="text-2xl md:text-4xl font-semibold max-w-3xl mx-auto leading-snug mb-10">
           State-of-the-art algorithms and{" "}
           <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl font-bold">
             clinically validated digital biomarkers
@@ -56,7 +56,7 @@ export default function Details() {
 
 
           <div>
-            <Image src="/icon1.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon1.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Enhanced Visualization</h4>
             <p className="text-xs md:text-sm text-gray-400">
               Leveraging AI to create detailed ultrasound images that reveal intricate kidney structures, facilitating the early detection of CKD.
@@ -65,7 +65,7 @@ export default function Details() {
 
          
           <div>
-            <Image src="/icon2.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon2.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Dynamic Scans Analysis</h4>
             <p className="text-xs md:text-sm text-gray-400">
               Utilizing AI for real-time processing of ultrasound videos, allowing nephrologists to observe kidney function and flow dynamics in action for precise CKD monitoring.
@@ -74,7 +74,7 @@ export default function Details() {
 
           
           <div>
-            <Image src="/icon3.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon3.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Predictive Analytics</h4>
             <p className="text-xs md:text-sm text-gray-400">
               Deep learning algorithms analyze ultrasound data to predict CKD progression, enabling proactive treatment adjustments and better patient outcomes.
@@ -83,7 +83,7 @@ export default function Details() {
 
          
           <div>
-            <Image src="/icon4.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon4.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Scalable Screening</h4>
             <p className="text-xs md:text-sm text-gray-400">
               Our technology scales to meet the needs of growing patient populations, ensuring that high-risk individuals receive timely CKD screening with AI-augmented ultrasound.
@@ -92,7 +92,7 @@ export default function Details() {
 
           
           <div>
-            <Image src="/icon5.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon5.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Secure Data Handling</h4>
             <p className="text-xs md:text-sm text-gray-400">
               State-of-the-art encryption and privacy measures protect sensitive patient data generated from ultrasound scans, maintaining confidentiality in CKD diagnosis and treatment.
@@ -101,7 +101,7 @@ export default function Details() {
 
           
           <div>
-            <Image src="/icon6.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon6.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Knowledge Empowerment</h4>
             <p className="text-xs md:text-sm text-gray-400">
               Crafting specialized educational materials that elucidate the predictive capabilities of AI-powered ultrasounds in CKD, empowering patients with knowledge for proactive disease management.
@@ -110,7 +110,7 @@ export default function Details() {
 
           
           <div>
-            <Image src="/icon7.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon7.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Continuous Care</h4>
             <p className="text-xs md:text-sm text-gray-400">
               Utilizing AI to monitor CKD markers in ultrasound data, triggering timely alerts for critical changes, ensuring prompt intervention and individualized patient care plans.
@@ -119,7 +119,7 @@ export default function Details() {
 
           
           <div>
-            <Image src="/icon8.png" alt="" width={50} height={50} className="mx-auto mb-4" />
+            <Image src="/icon8.png" alt="" width={75} height={75} className="mx-auto mb-4" />
             <h4 className="font-semibold text-sm md:text-base">Intelligent Insights</h4>
             <p className="text-xs md:text-sm text-gray-400">
               Advanced AI algorithms process and analyze ultrasound imaging data to uncover hidden patterns and trends, providing deep insights into CKD detection and progression risk factors.
@@ -145,18 +145,49 @@ export default function Details() {
           </div>
         </div>
 
-        
-        <div className="mt-28 text-center bg-gradient-to-b from-black via-blue-900 to-[#1e45d5cc] text-white py-20 md:py-20 ">
+      <section
+        className="text-white py-24 md:py-32 text-center"
+        style={{
+          backgroundImage: `
+            linear-gradient(
+              to bottom,
+              #000000 0%,
+              #0b1a3a 40%,
+              #1e3a8a 70%,
+              #000000 100%
+            ),
+            url('/hexagon.png')
+          `,
+          backgroundRepeat: "repeat",
+          backgroundSize: "75px",
+          backgroundBlendMode: "soft-light",
+        }}
+      >
+
+        <div className="max-w-5xl mx-auto px-6">
+
           <h3 className="text-4xl font-bold mb-8">
-            Learn more about <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl">Our Solution</span>
+            Learn more about{" "}
+            <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl">
+              Our Solution
+            </span>
           </h3>
 
-          <Image src="/body.png" alt="" width={300} height={300} className="mx-auto mt-10 mb-4" />
+          <Image
+            src="/body.png"
+            alt="body"
+            width={300}
+            height={300}
+            className="mx-auto mt-10 mb-6"
+          />
 
-          <Button variant="default" aria-label="Submit" className="mt-6 px-4 py-5 bg-sky-400 cursor-pointer hover:bg-[rgb(81,122,249)]">
+          <Button className="mt-4 px-6 py-4 bg-sky-400 hover:bg-[rgb(81,122,249)]">
             Request Demo
           </Button>
+
         </div>
+
+      </section>
 
       </div>
     </section>

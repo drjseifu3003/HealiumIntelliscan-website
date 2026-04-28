@@ -13,7 +13,7 @@ export default function CareersPage() {
       {/* HERO */}
       <section className="text-center py-28 md:py-32 px-6 bg-gradient-to-b from-[#517af9] via-[#1e45d5cc] to-black">
         
-        <h1 className="text-3xl md:text-5xl font-bold max-w-3xl mx-auto">
+        <h1 className="text-3xl md:text-7xl font-bold max-w-7xl mx-auto">
           Build the Future of Healthcare With Us
         </h1>
 
@@ -43,7 +43,7 @@ export default function CareersPage() {
        {/* WHY JOIN */}
       <section className="py-20 px-6 bg-linear-to-b bg-gradient-to-b from-[#517af9] via-[#1e45d5cc] to-black text-center">
         
-        <h2 className="text-5xl font-bold">
+        <h2 className="text-7xl font-bold mb-5">
           Why Join Healium IntelliScan?
         </h2>
 
@@ -100,7 +100,7 @@ export default function CareersPage() {
             {/* OPEN POSITIONS */}
       <section className="py-20 px-6 text-center">
 
-    <h2 className="text-3xl font-bold">Open Positions</h2>
+    <h2 className="text-5xl font-bold mb-5">Open Positions</h2>
     <p className="text-gray-400 text-sm mt-2">
         Find your next opportunity to make a difference
     </p>
@@ -165,7 +165,7 @@ export default function CareersPage() {
             {/* FINAL CTA */}
       <section className="py-20 px-6 text-center">
 
-        <h2 className="text-2xl font-bold">
+        <h2 className="text-5xl font-bold mb-5">
           Don't See the Right Role?
         </h2>
 
