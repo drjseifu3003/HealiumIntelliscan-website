@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
         
         {/* HEADING */}
-        <h1 className="text-5xl md:text5xl font-bold leading-[1.2] max-w-5xl mx-auto">
+        <h1 className="text-6xl md:text6xl font-bold leading-[1.2] max-w-5xl mx-auto">
           Revolutionizing Early{" "}
           <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-6xl font-bold">
             Detection of Chronic Kidney Disease
@@ -51,9 +51,9 @@ export default function Hero() {
           <Image 
             src="/hero.gif"
             alt="hero"
-            width={950}
-            height={700}
-            className="w-full max-w-3xl"
+            width = {1000}
+            height={950}
+            className="w-full max-w-full"
           />
         </div>
 

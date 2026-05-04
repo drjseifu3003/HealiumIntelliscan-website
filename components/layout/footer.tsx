@@ -1,4 +1,5 @@
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -11,7 +12,6 @@ export default function Footer() {
 
           {/* LEFT */}
           <div>
-
             <Image
               src="/healium-intelliscan-logo.png"
               width={170}
@@ -19,7 +19,7 @@ export default function Footer() {
               alt="logo"
             />
 
-            {/* ADDRESSES SIDE BY SIDE */}
+            {/* ADDRESSES */}
             <div className="flex gap-16 mt-6 text-sm text-white">
 
               <div>
@@ -41,11 +41,27 @@ export default function Footer() {
 
           {/* RIGHT LINKS */}
           <div className="text-sm space-y-2">
-            {["Home","About Us","Contact Us","Careers","Privacy Policy","Terms & Conditions","Help & Support"].map((item)=>(
-              <p key={item} className="underline hover:text-white cursor-pointer">
-                {item}
-              </p>
-            ))}
+
+            <Link href="/" className="block hover:text-white">Home</Link>
+
+            <Link href="/about" className="block hover:text-white">About Us</Link>
+
+            <Link href="/contact" className="block hover:text-white">Contact Us</Link>
+
+            <Link href="/careers" className="block hover:text-white">Careers</Link>
+
+            <Link href="/privacy-policy" className="block hover:text-white">
+              Privacy Policy
+            </Link>
+
+            <Link href="/terms-and-conditions" className="block hover:text-white">
+              Terms & Conditions
+            </Link>
+
+            <Link href="/support" className="block hover:text-white">
+              Help & Support
+            </Link>
+
           </div>
 
         </div>
@@ -57,15 +73,18 @@ export default function Footer() {
             © 2026 Healium Intelliscan
           </p>
 
-          {/* LINKEDIN */}
-          <a  href="https://www.linkedin.com/company/healiumdigitalhealth/" target = "blank" className="inline-block">
-          <Image
-            src="/linkedin.png"
-            width={30}
-            height={30}
-            alt="linkedin"
-            className="opacity-60 hover:opacity-100 cursor-pointer"
-          />
+          <a
+            href="https://www.linkedin.com/company/healiumdigitalhealth/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/linkedin.png"
+              width={30}
+              height={30}
+              alt="linkedin"
+              className="opacity-60 hover:opacity-100"
+            />
           </a>
 
         </div>
@@ -77,5 +96,5 @@ export default function Footer() {
 
       </div>
     </footer>
-  )
+  );
 }
