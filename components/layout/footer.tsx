@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           {/* RIGHT LINKS */}
-          <div className="text-sm space-y-2">
+          <div className="text-[16px] underline space-y-2">
 
             <Link href="/" className="block hover:text-white">Home</Link>
 

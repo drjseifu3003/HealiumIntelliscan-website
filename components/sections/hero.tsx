@@ -35,7 +35,7 @@ export default function Hero() {
         </h1>
 
         {/* DESCRIPTION */}
-        <p className="mt-6 text-gray-400 max-w-xl mx-auto text-base md:text-lg">
+        <p className="mt-4 mb-[10px] text-gray-400 mx-auto text-base text-lg">
           Healium Digital Healthcare's AI-PoCUS is a pioneering technology in clinical practice, as it non-invasively detects chronic kidney disease in its early stages and provides predictive insights into its causality.
         </p>
 
@@ -50,9 +50,9 @@ export default function Hero() {
         <div className="mt-12 flex justify-center w-full h-auto">
           <Image 
             src="/hero.gif"
-            alt="hero"
+            alt="hero-header-image"
             width = {1000}
-            height={950}
+            height={563.328}
             className="w-full max-w-full"
           />
         </div>

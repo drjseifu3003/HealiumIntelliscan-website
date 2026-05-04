@@ -13,11 +13,11 @@ export default function ContactPage() {
       <section className="py-20 md:py-28 px-6 text-center">
         <div className="max-w-3xl mx-auto space-y-4">
 
-          <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text ">
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text ">
             Request Demo
           </h1>
 
-          <p className="text-gray-400">
+          <p className="text-[#999] text-[18px]">
             Provide us with your details and we will contact you to arrange a demo.
           </p>
 
@@ -100,10 +100,10 @@ export default function ContactPage() {
         }}
       >
 
-        <h2 className="text-2xl md:text-4xl font-semibold">
-          Learn more about <br />
-          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl">
-            Our Solution
+        <h2 className="text-[40px] font-bold">
+          Learn more about {" "}
+          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[56px]">
+             Our Solution
           </span>
         </h2>
 
@@ -111,8 +111,8 @@ export default function ContactPage() {
           <Image
             src="/body.png"
             alt="body"
-            width={400}
-            height={400}
+            width={500}
+            height={462}
             className="w-64 md:w-96 opacity-90"
           />
         </div>

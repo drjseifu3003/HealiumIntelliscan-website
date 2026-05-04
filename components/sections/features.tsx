@@ -4,8 +4,8 @@ export default function Features() {
   return (
     <section className="bg-black text-white py-20 md:py-28 px-6">
       
-      <h2 className="text-5xl md:text-4xl font-semibold mb-12 text-white text-center">Developing Solutions for{" "}
-          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl font-bold">
+      <h2 className="text-[40px] font-semibold mb-12 text-white text-center">Developing Solutions for{" "}
+          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[56px] font-bold">
          Global CKD Epidemic</span> 
       </h2>
 
@@ -13,20 +13,20 @@ export default function Features() {
         
         <div>
           <Image src="/innovative.png" alt="" width={450} height={450} className="mx-auto mb-4 w-auto h-auto" />
-          <h3 className="font-semibold text-lg text-white text-center">
+          <h3 className="font-semibold text-[20.8px] text-white text-center">
             Innovative AI-Driven Ultrasound
           </h3>
-          <p className="mt-2 text-gray-400 text-sm text-center mx-auto ml-3 mr-3">
+          <p className="mt-2 text-gray-400 text-[16px] text-center mx-auto ml-3 mr-3">
             AI-powered Ultrasound offers real-time support and quality evaluation, enabling healthcare professionals of all skill levels to perform high-quality renal ultrasounds.
           </p>
         </div>
 
         <div>
           <Image src="/revolutionizing.png" alt="" width={450} height={450} className="mx-auto mb-4 w-auto h-auto" />
-          <h3 className="font-semibold text-lg text-white text-center">
+          <h3 className="font-semibold text-[20.8px] text-white text-center">
             Revolutionizing Early CKD Detection
           </h3>
-          <p className="mt-2 text-gray-400 text-sm text-center mx-auto ml-3 mr-3">
+          <p className="mt-2 text-gray-400 text-[16px] text-center mx-auto ml-3 mr-3">
             Detects Chronic Kidney Disease from its earliest stage but also identifies the root cause. By leveraging digital biomarkers.
 
 
@@ -35,10 +35,10 @@ export default function Features() {
 
         <div>
           <Image src="/advanced.png" alt="" width={450} height={450} className="mx-auto mb-4 w-auto h-auto" />
-          <h3 className="font-semibold text-lg text-white text-center">
+          <h3 className="font-semibold text-[20.8px] text-white text-center">
             Advanced Renal Health Diagnostics
           </h3>
-          <p className="mt-2 text-gray-400 text-sm text-center mx-auto ml-3 mr-3">
+          <p className="mt-2 text-gray-400 text-[16px] text-center mx-auto ml-3 mr-3">
             Generates patient-specific perfusion models and constructs three-dimensional representations of the kidney, enhancing precision and clarity in diagnosis.
           </p>
         </div>
