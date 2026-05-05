@@ -155,7 +155,7 @@ export default function AboutPage() {
 
       {/* VISION */}
       <section className="py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto font-semibold text-gray-100 text-sm md:text-base">
+        <div className="max-w-3xl mx-auto font-bold text-gray-100 text-[19.2px] ">
           <h3 className="text-[rgb(81,122,249)] font-semibold mb-2">Our Vision</h3>
           <p>
             At the core of our endeavors lies a commitment to integrating artificial intelligence with medical expertise, propelling the fight against chronic kidney disease into a new era. We strive to craft pioneering AI-ultrasound technologies that transcend conventional boundaries, offering breakthrough precision in CKD detection and management that enhances patient care and outcomes.
@@ -189,11 +189,11 @@ export default function AboutPage() {
 
       {/* TEAM */}
       <section className="py-20 px-6 text-center">
-        <h2 className="text-5xl font-semibold mb-16">
+        <h2 className="text-[36px] font-bold mb-16">
           The Leadership Team
         </h2>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-16">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-32">
 
           {/* CARD 1 */}
           <div className="bg-[#0b0d10] p-8 rounded-xl w-72 mr-10">

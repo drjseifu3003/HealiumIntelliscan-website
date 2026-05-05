@@ -20,17 +20,17 @@ export default function Footer() {
             />
 
             {/* ADDRESSES */}
-            <div className="flex gap-16 mt-6 text-sm text-white">
+            <div className="flex gap-16 mt-6 text-[16px] text-white">
 
               <div>
-                <p className="text-sky-500 font-semibold">USA</p>
+                <p className="text-sky-500 text-[17.6px] font-medium">USA</p>
                 <p>26 Broadway</p>
                 <p>Suite 934-G68</p>
                 <p>New York, NY 10004 USA</p>
               </div>
 
               <div>
-                <p className="text-sky-500 font-semibold">SINGAPORE</p>
+                <p className="text-sky-500 text-[17.6px] font-medium">SINGAPORE</p>
                 <p>23 West Coast Crescent</p>
                 <p>#14-07 Blue Horizon</p>
                 <p>Singapore 128046</p>
