@@ -153,7 +153,7 @@ export default function Support() {
                     value={`item-${i}`}
                     className="  bg-[#090913] border border-[#1c1c22] rounded-lg px-4"
                   >
-                    <AccordionTrigger className="text-[16px] text-linear-to-r from-[white] to-[#a2a2a2] text-left font-sans te cursor-pointer">
+                    <AccordionTrigger className="text-[16px] text-linear-to-r from-[white] to-[#a2a2a2] text-left font-sans cursor-pointer">
                       {item.q}
                     </AccordionTrigger>
 
@@ -161,7 +161,8 @@ export default function Support() {
                       {item.a}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                ))}npm run dev
+                
 
               </Accordion>
 

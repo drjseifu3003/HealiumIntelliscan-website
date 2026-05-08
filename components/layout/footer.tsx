@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -22,18 +23,28 @@ export default function Footer() {
             {/* ADDRESSES */}
             <div className="flex gap-16 mt-6 text-[16px] text-white">
 
-              <div>
+              <div className="flex gap-4 items-start">
+                <div className="w-[34px] h-[34px] rounded-full bg-[#1b1b1b] flex items-center justify-center mt-1">
+                    <MapPin size={20} className="text-[#999]" />
+                  </div>
+                <div>  
                 <p className="text-sky-500 text-[17.6px] font-medium">USA</p>
                 <p>26 Broadway</p>
                 <p>Suite 934-G68</p>
                 <p>New York, NY 10004 USA</p>
               </div>
+              </div>
 
-              <div>
+              <div className="flex gap-4 items-start">
+                <div className="w-[34px] h-[34px] rounded-full bg-[#1b1b1b] flex items-center justify-center mt-1">
+                    <MapPin size={20} className="text-gray-300" />
+                  </div>
+                <div> 
                 <p className="text-sky-500 text-[17.6px] font-medium">SINGAPORE</p>
                 <p>23 West Coast Crescent</p>
                 <p>#14-07 Blue Horizon</p>
                 <p>Singapore 128046</p>
+              </div>
               </div>
 
             </div>
@@ -69,7 +80,7 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="border-t border-gray-800 mt-10 pt-6 flex justify-between items-center">
 
-          <p className="text-sm text-gray-100">
+          <p className="text-[16px] text-[#999] mb-4">
             © 2026 Healium Intelliscan
           </p>
 
@@ -83,14 +94,15 @@ export default function Footer() {
               width={30}
               height={30}
               alt="linkedin"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-60 hover:opacity-100 fill-[#999]"
+              
             />
           </a>
 
         </div>
 
         {/* FDA TEXT */}
-        <p className="text-xs text-gray-100 mt-4">
+        <p className="text-[16px] text-[#999] mt-4">
           This device is pending FDA 510(k) clearance and is not yet available for sale in the United States.
         </p>
 

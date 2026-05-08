@@ -1,5 +1,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import CTA from "@/components/cta";
+import Footer from "@/components/layout/footer"
+
 
 export default function Details() {
   return (
@@ -145,7 +148,7 @@ export default function Details() {
           </div>
         </div>
 
-      <section
+        {/* <section
         className="text-white w-full py-24 md:py-32 text-center"
         style={{
           backgroundImage: `
@@ -187,9 +190,18 @@ export default function Details() {
 
         </div>
 
-      </section>
+      </section> */}
 
+   
+      
+    
       </div>
+      
+      <CTA/>
     </section>
+    
+
+   
+
   )
 }

@@ -20,7 +20,7 @@ export default function CTA() {
           url('/hexagon.png')
         `,
         backgroundRepeat: "repeat",
-        backgroundSize: "75px",   // IMPORTANT (not 75px)
+        backgroundSize: "75px",   
         backgroundBlendMode: "soft-light",
       }}
     >
@@ -29,12 +29,12 @@ export default function CTA() {
       <div className="relative z-10 max-w-4xl mx-auto px-6">
 
         {/* TEXT */}
-        <p className="text-gray-300 text-sm mb-2">
+        <p className="text-gray-300 text-[40px] mb-2">
           Learn more about
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
-          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
+        <h2 className="font-bold leading-tight">
+          <span className="bg-gradient-to-r text-[56px]  from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
             Our Solution
           </span>
         </h2>

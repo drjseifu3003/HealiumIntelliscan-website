@@ -14,9 +14,9 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="bg-black border-b border-gray-800 fixed top-0 left-0 w-full z-[100]">
+      <nav className="bg-black border-black border-b  fixed top-0 left-0 w-full z-[100]">
 
-        <div className="flex justify-between items-center px-6 py-4">
+        <div className="flex justify-between items-center ml-4 px-6 py-4">
 
           {/* LOGO */}
           <Image
@@ -27,21 +27,21 @@ export default function Navbar() {
           />
 
           {/* DESKTOP MENU */}
-          <div className="hidden md:flex gap-8 text-sm font-medium">
+          <div className="hidden md:flex gap-8 text-[16px] font-normal">
 
-            <Link href="/" className="text-gray-400 hover:text-white transition-colors duration-200">
+            <Link href="/" className="text-[#999] hover:text-white transition-colors duration-200">
               Home
             </Link>
 
-            <Link href="/about" className="text-gray-400 hover:text-white transition-colors duration-200">
+            <Link href="/about" className="text-[#999] hover:text-white transition-colors duration-200">
               About Us
             </Link>
 
-            <Link href="/contact" className="text-gray-400 hover:text-white transition-colors duration-200">
+            <Link href="/contact" className="text-[#999] hover:text-white transition-colors duration-200">
               Contact Us
             </Link>
 
-            <Link href="/careers" className="text-gray-400 hover:text-white transition-colors duration-200">
+            <Link href="/careers" className="text-[#999] hover:text-white transition-colors duration-200">
               Careers
             </Link>
 
@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* RIGHT */}
           <div className="flex items-center gap-4">
 
-            <Button className="hidden md:block bg-sky-400 hover:bg-[rgb(81,122,249)] text-white px-5 py-2 text-sm">
+            <Button className="hidden md:block bg-[#3788b9] font-normal cursor-pointer w-[149.4px] h-[42px] text-white px-5 py-2 text-[16px]">
               Request Demo
             </Button>
 
@@ -113,7 +113,7 @@ export default function Navbar() {
             Careers
           </Link>
 
-          <Button className="mt-8 bg-sky-400 hover:bg-[rgb(81,122,249)] text-white w-full py-3 text-base">
+          <Button className="mt-8 bg-[#3788b9] hover:bg-[rgb(81,122,249)] text-white w-full py-3 text-base">
             Request Demo
           </Button>
 

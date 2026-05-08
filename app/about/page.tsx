@@ -155,7 +155,7 @@ export default function AboutPage() {
 
       {/* VISION */}
       <section className="py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto font-bold text-gray-100 text-[19.2px] ">
+        <div className="max-w-3xl mx-auto font-bold bg-linear-180 from-[white] to-[#a2a2a2] text-transparent bg-clip-text  text-[19.2px] ">
           <h3 className="text-[rgb(81,122,249)] font-semibold mb-2">Our Vision</h3>
           <p>
             At the core of our endeavors lies a commitment to integrating artificial intelligence with medical expertise, propelling the fight against chronic kidney disease into a new era. We strive to craft pioneering AI-ultrasound technologies that transcend conventional boundaries, offering breakthrough precision in CKD detection and management that enhances patient care and outcomes.
