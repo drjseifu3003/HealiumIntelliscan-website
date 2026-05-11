@@ -420,7 +420,23 @@ export default function CareersPage() {
           We're always looking for talented people who share our passion. Send us your resume and we'll reach out when a matching opportunity arises.
         </p>
 
-        <Button className="mt-5 mb-4 bg-[#3898ec] text-[19.2px] w-[216.5px] h-[52.8px] font-semibold text-[#0d1b2a] hover:text-white cursor-pointer px-6 py-3">
+        <Button
+          onClick={() => setOpen(true)}
+          className="
+            mt-5
+            mb-4
+            bg-[#3898ec]
+            text-[19.2px]
+            w-[216.5px]
+            h-[52.8px]
+            font-semibold
+            text-[#0d1b2a]
+            hover:text-white
+            cursor-pointer
+            px-6
+            py-3
+          "
+        >
           Send Your Resume
         </Button>
 

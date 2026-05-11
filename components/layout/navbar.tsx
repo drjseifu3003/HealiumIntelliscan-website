@@ -49,10 +49,12 @@ export default function Navbar() {
 
           {/* RIGHT */}
           <div className="flex items-center gap-4">
-
+            
+            <Link href="/contact">
             <Button className="hidden md:block bg-[#3788b9] font-normal cursor-pointer w-[149.4px] h-[42px] text-white px-5 py-2 text-[16px]">
               Request Demo
             </Button>
+            </Link>
 
             {/* HAMBURGER */}
             <button
@@ -113,9 +115,11 @@ export default function Navbar() {
             Careers
           </Link>
 
+          <Link href="/contact">
           <Button className="mt-8 bg-[#3788b9] hover:bg-[rgb(81,122,249)] text-white w-full py-3 text-base">
             Request Demo
           </Button>
+          </Link>
 
         </div>
       </div>

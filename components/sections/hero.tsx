@@ -40,11 +40,13 @@ export default function Hero() {
         </p>
 
         {/* BUTTON */}
+        <Link href="/contact">
         <div className="mt-6 ">
-          <Button className="bg-sky-400 hover:bg-[rgb(81,122,249)] text-white px-8 py-6">
+          <Button className="bg-sky-400 hover:bg-[rgb(81,122,249)] text-white px-8 py-6 cursor-pointer">
             Request Demo
           </Button>
         </div>
+        </Link>
 
         {/* IMAGE */}
         <div className="mt-12 flex justify-center w-full h-auto">
