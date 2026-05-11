@@ -283,7 +283,7 @@ export default function CareersPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
 
           {/* MODAL */}
-          <div className="relative bg-white w-[560px]  h-[531.1px] rounded-[2px]">
+          <div className="relative bg-white w-[560px] min-h-[531.1px] rounded-[2px]">
 
             {/* INNER CONTENT */}
             <div className="px-[18px] pt-[14px]">
@@ -315,7 +315,7 @@ export default function CareersPage() {
 
                 {/* NAME */}
                 <div className="mb-[10px]">
-                  <label className="block text-left text-[16px] text-[#999] mb-[4px] font-normal">
+                  <label className="block text-left text-[16px] text-[#999] mb-[4px] font-semibold">
                     Name
                   </label>
 
@@ -328,15 +328,16 @@ export default function CareersPage() {
                       border-[#d9d9d9]
                       px-[10px]
                       text-[14px]
-                      text-black
+                      text-[#333]
                       outline-none
+                      font-normal
                     "
                   />
                 </div>
 
                 {/* EMAIL */}
                 <div className="mb-[10px]">
-                  <label className="block text-left text-[16px] text-[#999] mb-[4px] font-normal">
+                  <label className="block text-left text-[16px] text-[#999] mb-[4px] font-semibold">
                     Email Address
                   </label>
 
@@ -349,7 +350,7 @@ export default function CareersPage() {
                       border-[#d9d9d9]
                       px-[10px]
                       text-[14px]
-                      text-black
+                      text-[#333] font-normal
                       outline-none
                     "
                   />
@@ -359,22 +360,23 @@ export default function CareersPage() {
                 <div>
                   <label className="mb-[16px]"></label>
                   <textarea
-                    placeholder="Write your cover letter here..."
-                    rows = {5}
-                    className="
-                      bg-white
-                      w-input
-                      max-h-[5000px]
-                      h-[142px]
-                      border
-                      border-[#d9d9d9]
-                      p-[10px]
-                      text-[14px]
-                      text-[#999]
-                      outline-none
-                      resize : both
-                    "
-                  />
+                  placeholder="Write your cover letter here..."
+                  rows={5}
+                  className="
+                    w-full
+                    min-h-[191px]
+                    mb-[10px]
+                    border font-normal
+                    border-[#d9d9d9]
+                    px-3 py-2
+                    text-[14px]
+                    text-[#333] 
+                    outline-none
+                    resize-both
+                    overflow-auto
+                    block
+                  "
+                />
 
                 </div>
 
@@ -382,9 +384,10 @@ export default function CareersPage() {
                 <button
                   type="submit"
                   className="
-                    bg-[#3898ec]
-                    h-[38px]
-                    px-[22px]
+                    
+                    bg-[#3898ec] 
+                    h-[42px]
+                    px-[22px] mt-5
                     text-[14px]
                     font-medium
                     text-black
