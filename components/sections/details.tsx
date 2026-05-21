@@ -20,28 +20,29 @@ export default function Details() {
         </h2>
 
         
-        <div className="flex flex-col md:flex-row justify-between gap-12">
-          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px py-10 px-8 rounded-xl text-[16px]">
+        <div className="flex flex-col md:flex-row  justify-between gap-12">
+          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px py-10 px-8 font-medium rounded-xl text-[16px]">
             AI Powered CKD Biomarkers
           </span>
-          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px py-10 px-8 rounded-xl text-[16px]">
+          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px py-10 px-8 font-medium rounded-xl text-[16px]">
             Personalized Perfusion Modelling
           </span>
-          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px py-10 px-8 rounded-xl text-[16px]">
+          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px font-medium py-10 px-8 rounded-xl text-[16px]">
             Causality Prediction
           </span>
-          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px py-10 px-8 rounded-xl text-[16px]">
+          <span className="bg-gradient-to-b from-[rgb(55,136,185)] to-[#0c51ff]  width=200px py-10 px-8 font-medium rounded-xl text-[16px]">
             FDA 510(k) Pending
           </span>
         </div>
 
         
-        <div className="mx-auto w-56 md:w-72 mt-10">
+        <div className="bg-[#13131300] mx-auto w-56 md:w-72 mt-10">
           <Image
             src="/device.png"
             alt="device"
             width={382}
-            height={474}
+            height={514}
+            
           />
         </div>
 
@@ -50,7 +51,7 @@ export default function Details() {
           Healium Ultrasound Device for CKD Detection and Management
         </h3>
 
-        <p className="text-gray-400 text-sm  mx-auto">
+        <p className="text-[#999] text-[16px] font-normal mx-auto">
           Optimize CKD detection and management with the Healium Ultrasound Device, merging superior AI technology with clinical precision
         </p>
 

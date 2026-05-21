@@ -29,15 +29,9 @@ export default function CTA() {
       <div className="relative z-10 max-w-4xl mx-auto px-6">
 
         {/* TEXT */}
-        <p className="text-gray-300 text-[40px] mb-2">
-          Learn more about
-        </p>
-
-        <h2 className="font-bold leading-tight">
-          <span className="bg-gradient-to-r text-[56px]  from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text">
-            Our Solution
-          </span>
-        </h2>
+        <h3 className="text-[40px] font-bold mb-10">
+            Learn more about <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[56px] font-bold mb-4">Our Solution</span>
+          </h3>
 
         {/* IMAGE */}
         <div className="mt-10 flex justify-center">

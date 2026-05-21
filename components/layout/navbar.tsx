@@ -10,6 +10,13 @@ import { usePathname } from "next/navigation"
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
+
+  const navLinkClass = (path: string) =>
+  `${
+    pathname === path
+      ? "text-white"
+      : "text-[#999]"
+  } hover:text-white transition-colors `
   
   return (
     <>
@@ -29,19 +36,19 @@ export default function Navbar() {
           {/* DESKTOP MENU */}
           <div className="hidden md:flex gap-8 text-[16px] font-normal">
 
-            <Link href="/" className="text-[#999] hover:text-white transition-colors duration-200">
+            <Link href="/" className={navLinkClass("/")}>
               Home
             </Link>
 
-            <Link href="/about" className="text-[#999] hover:text-white transition-colors duration-200">
+            <Link href="/about" className={navLinkClass("/about")}>
               About Us
             </Link>
 
-            <Link href="/contact" className="text-[#999] hover:text-white transition-colors duration-200">
+            <Link href="/contact" className={navLinkClass("/contact")}>
               Contact Us
             </Link>
 
-            <Link href="/careers" className="text-[#999] hover:text-white transition-colors duration-200">
+            <Link href="/careers" className={navLinkClass("/careers")}>
               Careers
             </Link>
 
@@ -69,7 +76,7 @@ export default function Navbar() {
       </nav>
 
       {/* NAVBAR OFFSET */}
-      <div className="h-[72px]" />
+      <div className="h-[58px]" />
 
       {/* OVERLAY */}
       <div

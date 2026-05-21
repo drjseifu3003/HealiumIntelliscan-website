@@ -27,11 +27,11 @@ export default function AboutPage() {
         >
         <div className="max-w-5xl mx-auto space-y-6">
 
-          <h1 className="text-[40px]  mb-8 font-semibold leading-snug">
+          <h1 className="text-[40px] bg-linear-180 from-[white] to-[#a2a2a2] text-transparent bg-clip-text  mb-8 font-semibold leading-snug">
             Shaping the Future of Health: Pioneering AI in the Fight Against CKD
           </h1>
 
-          <p className="text-[#999] max-w-[972px] mx-auto text-[16px] font-bold ">
+          <p className="text-[#999] max-w-[973px] text-center mx-auto text-[16px] font-bold ">
             Unveiling the potential of AI to transform kidney care, we are dedicated to advancing CKD detection and management for a healthier tomorrow.
           </p>
 
