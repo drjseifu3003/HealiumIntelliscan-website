@@ -161,7 +161,7 @@ export default function Support() {
                       {item.a}
                     </AccordionContent>
                   </AccordionItem>
-                ))}npm run dev
+                ))}
                 
 
               </Accordion>
