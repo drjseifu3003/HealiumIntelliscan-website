@@ -6,13 +6,11 @@ import Footer from "@/components/layout/footer"
 
 export default function Details() {
   return (
-    <section className="bg-black text-white py-20 md:py-16 px-6">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 text-center space-y-10">
-
-        
-        <h2 className="text-[40px] font-bold  mx-auto leading-snug mb-10">
+    <section className="bg-black text-white py-16p md:py-16 px-2">
+      <div className="max-w-7xl mx-auto text-center space-y-10">
+        <h2 className="text-[36px] font-bold  mx-auto leading-relaxed mb-10">
           State-of-the-art algorithms and{" "}
-          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[56px] font-bold">
+          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[40px] font-bold">
             clinically validated digital biomarkers
           </span>
         </h2>
@@ -56,7 +54,7 @@ export default function Details() {
         </div>
 
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
           <div>
             <Image src="/icon1.png" alt="" width={80} height={61} className="mx-auto mb-4 h-auto w-[80px]" />
             <h4 className="font-bold text-[19.2px] bg-linear-180 from-white to-[#a2a2a2] text-transparent bg-clip-text font-sans ">Enhanced Visualization</h4>
@@ -135,7 +133,7 @@ export default function Details() {
             Backed by <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl font-bold mb-4">Global Investors</span>
           </h3>
 
-          <div className= "flex flex-wrap justify-center gap-10 opacity-80 hover:opacity-100 h-auto w-auto">
+          <div className= "flex flex-col items-center md:flex-row flex-wrap justify-center gap-10 opacity-80 hover:opacity-100 h-auto w-auto">
             <Image src="/investor1.png" alt="" width={140} height={120.69} />
             <Image src="/investor2.png" alt="" width={140} height={120.69} />
             <Image src="/investor3.png" alt="" width={140} height={120.69} />
@@ -144,58 +142,8 @@ export default function Details() {
             <Image src="/investor6.png" alt="" width={140} height={120.69} />
             <Image src="/investor7.png" alt="" width={140} height={120.69} />
           </div>
-        </div>
-
-        {/* <section
-        className="text-white w-full py-24 md:py-32 text-center"
-        style={{
-          backgroundImage: `
-            linear-gradient(
-              to bottom,
-              #000000 0%,
-              #0b1a3a 40%,
-              #1e3a8a 70%,
-              #000000 100%
-            ),
-            url('/hexagon.png')
-          `,
-          backgroundRepeat: "repeat",
-          backgroundSize: "75px",
-          backgroundBlendMode: "soft-light",
-        }}
-      >
-
-        <div className="max-w-5xl mx-auto px-6">
-
-          <h3 className="text-4xl font-bold mb-8">
-            Learn more about{" "}
-            <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-5xl">
-              Our Solution
-            </span>
-          </h3>
-
-          <Image
-            src="/body.png"
-            alt="body"
-            width={300}
-            height={300}
-            className="mx-auto mt-10 mb-6"
-          />
-
-          <Button className="mt-4 px-6 py-4 bg-sky-400 hover:bg-[rgb(81,122,249)]">
-            Request Demo
-          </Button>
-
-        </div>
-
-      </section> */}
-
-   
-      
-    
+        </div>    
       </div>
-      
-      <CTA/>
     </section>
     
 

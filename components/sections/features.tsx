@@ -2,14 +2,14 @@ import Image from "next/image"
 
 export default function Features() {
   return (
-    <section className="bg-black text-white py-10 px-6">
+    <section className="bg-black text-white py-10 px-2">
       
-      <h2 className="text-[38px] leading-[1.15] font-[700] mb-16 text-center">Developing Solutions for{" "}
-          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[56px] font-bold">
+      <h2 className="text-[36px] leading-relaxed md:leading-normal font-[700] mb-16 text-center">Developing Solutions for{" "}
+          <span className="bg-gradient-to-r from-[rgb(81,122,249)] to-sky-400 text-transparent bg-clip-text text-[50px] font-bold">
          Global CKD Epidemic</span> 
       </h2>
 
-      <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-12">
+      <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-12 px-4">
         
         <div>
           <Image src="/innovative.png" alt="" width={450} height={450} className="mx-auto mb-4 w-auto h-auto" />
