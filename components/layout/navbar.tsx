@@ -38,12 +38,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center ml-4 px-6 py-4">
 
           {/* LOGO */}
-          <Image
-            src="/healium-intelliscan-logo.png"
-            width={140}
-            height={40}
-            alt="logo"
-          />
+          <Link href='/' className="flex items-center">
+            <Image
+              src="/healium-intelliscan-logo.png"
+              width={140}
+              height={40}
+              alt="logo"
+            />
+          </Link>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex gap-8 text-[16px] font-normal">
