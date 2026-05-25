@@ -81,7 +81,7 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="border-t border-gray-800 mt-8 sm:mt-10 pt-5 sm:pt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between sm:items-center">
 
-          <p className="text-[14px] sm:text-[16px] text-[#999] order-2 sm:order-1 mb-0">
+          <p className="text-[14px] sm:text-[16px] text-[#999] mb-0">
             © 2026 Healium Intelliscan
           </p>
 
@@ -95,7 +95,7 @@ export default function Footer() {
               width={30}
               height={30}
               alt="linkedin"
-              className="opacity-60 hover:opacity-100 fill-[#999] order-1 sm:order-2"
+              className=" "
               
             />
           </a>
